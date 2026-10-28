@@ -1,0 +1,35 @@
+{
+  "name": "brandify-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon server/local.js",
+    "start": "node server/local.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "update-admin": "node server/scripts/update-admin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "pg": "^8.13.0",
+    "zod": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "vite": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4"
+  }
+}
